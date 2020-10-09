@@ -12,10 +12,6 @@ const taskRouter = require("./routes/task.route");
 require("./config/db.config");
 const app = express();
 //CORS configuration
-app.use(cors({
-    credentials: true,
-    origin: "http://localhost:3000"
-  }));
 
 app.use(logger("dev"));
 app.use(express.json());
